@@ -68,7 +68,45 @@ body {
 #wrapper {
 	min-width: 794px;
 	width: 794px; 			/* Entire blog width */
+
+  position: relative;
 }
+#social_links {
+  position: absolute;
+  top: -5px;
+  right: 0px;
+
+  overflow: hidden;
+}
+
+#social_links li {
+  float: left;
+
+  font-size: 0;
+  text-indent: -10000em;
+}
+
+#social_links li, #social_links li a {
+  height: 48px;
+  width: 53px;
+}
+
+#social_links li a {
+  display: block;
+}
+
+#facebook_link {
+  background: transparent url('../../images/facebook.png') no-repeat left top;
+}
+
+#twitter_link {
+  background: transparent url('../../images/twitter.png') no-repeat left top;
+}
+
+#rss_link {
+  background: transparent url('../../images/rss.png') no-repeat left top;
+}
+
 #body_wrapper {
   background: transparent url('../../images/body-side-shadows.png') repeat-y left top;
 

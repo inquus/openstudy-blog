@@ -43,11 +43,19 @@
 <?php } else { ?>
 <body class="bg">
 <?php } ?>
+
 <div id="bg_wrapper">
 
 <a name="top" id="top"></a>
 
 <div id="wrapper"<?php if (get_option('fauna_sidebar') != 'right') { ?> class="left"<?php } ?>>
+
+  <ul id="social_links">
+    <li><a id="twitter_link" href="http://twitter.com/openstudy" title="Follow us on Twitter">Follow us on Twitter</a></li>
+    <li><a id="facebook_link" href="http://www.facebook.com/OpenStudy" title="Become a Fan on Facebook">Become a Fan on Facebook</a></li>
+    <li><a id="rss_link" href="http://blog.openstudy.com/?feed=rss2" title="Subscribe to Our RSS Feed">Subscribe to Our RSS Feed</a></li>
+  </ul>
+
 	<div id="nav">
 		<div id="menu">
 			<ul>
