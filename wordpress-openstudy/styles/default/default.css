@@ -1,0 +1,507 @@
+/*
+
+	Fauna Default Style
+
+	Nearly all aspects of Fauna can be customized with this file alone.
+	
+	If you want to override an existing style listed in style.css, simply copy and 
+	paste it here, and add !important to the end of it. 
+	
+	For example:
+
+		.box, .box-blank { 
+			text-align: justify !important;
+		}
+
+	will make sure all text is justified, instead of left-aligned.
+	
+	If you want to make your custom Fauna style and want to keep the core files "clean",
+	copy "styles/default" folder to "styles/mystyle" and type in the URL in the options page,
+	for instance "styles/mystyle/mystyle.css".
+	
+	
+*/
+
+@font-face {
+  font-family: "Union";
+  src: url(/fonts/union.eot);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Union";
+  src: url(/fonts/unionbold.eot);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Union";
+  src: url(/fonts/union.ttf) format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Union";
+  src: url(/fonts/unionbold.ttf) format("truetype");
+  font-weight: bold;
+}
+
+
+
+/*
+
+	Widths
+	
+*/
+body {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif !important;
+
+  padding-bottom: 0;
+}
+
+#bg_wrapper {
+	background: transparent url('../../images/owl-background-bottom.png') no-repeat center bottom;
+
+  padding-bottom: 4em;
+}
+
+#wrapper {
+	min-width: 794px;
+	width: 794px; 			/* Entire blog width */
+}
+#body_wrapper {
+  background: transparent url('../../images/body-side-shadows.png') repeat-y left top;
+
+	padding: 0 6px;
+}
+#sidebar_container {
+  overflow: hidden;
+  
+  background: transparent url('../../images/sidebar-background.png') repeat-y right top;
+
+  border: 1px solid #C6C8C8;
+}
+#body {
+  overflow: hidden;
+
+  background: transparent url('../../images/body-bottom-shadow.png') repeat-x left bottom;
+
+  padding: 0 0 5px;
+}
+#sidebar {
+	width: 199px;				/* Sidebar width */
+	float: right;
+  padding: 0;
+}
+#sidebar h3 {
+  background: transparent url('../../images/sidebar-header-background.png') no-repeat center top;
+
+  padding-left: 30px;
+  padding-top: 1px;
+  text-align: center;
+  color: white;
+
+  font-weight: bold;
+  font-size: 9pt;
+
+  height: 25px;
+}
+#searchbox {
+  float: none;
+
+  padding-bottom: 10px;
+}
+#searchbox input {
+  border: 1px solid #BFE6FB;
+
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+#main {
+	width: 581px;				/* Main column width */
+	float: left;
+  background: #FFFFFF url('../../images/bg-lines.png') repeat left top;
+}
+div.inner {
+  background: transparent url('../../images/header-bottom-shadow.png') repeat-x left top;
+}
+#sidebar ul.inner {
+	padding: 20px 0.8em 0.8em 10px;
+
+  height: 7px;
+  background: transparent url('../../images/header-bottom-shadow.png') repeat-x left top;
+}
+#sidebar ul.inner li {
+  padding: 0 0 5px;
+}
+#header {
+	height: 109px;
+}
+.left #sidebar {
+	float: left;
+}
+.left #sidebar ul.inner {
+	padding: 0 .8em 0 0;
+}
+.left #main {
+	float: right;
+}
+
+.post p {
+  margin-top: 1em;
+  font-size: 9pt;
+  color: #2A2A2A;
+}
+
+.box h2 {
+  font-size: 16pt;
+  font-family: Union, Georgia, serif;
+
+  padding-bottom: 0.5em;
+
+  margin-right: 127px;
+
+	color: black;
+}
+
+/* 
+
+	Background
+	
+*/
+.bg { 
+	background: #F5F5F5 url('../../images/owl-background.png') no-repeat center top;
+}
+
+#header {
+	background-image: url('../../images/masthead-openstudy.png');
+	background-repeat: repeat-x !important;
+	background-position: center top;
+}
+
+#header h1 {
+  display: none
+}
+
+/*
+
+	Colors
+
+*/
+body {
+	color: #565654;				/* Text color */
+}
+#sidebar ul.inner li {
+	/*background-color: #fff;		/* Box background color */
+
+  font-size: 8pt;
+  color: #393939;
+}
+#sidebar ul.inner li div {
+  padding-left: 9px;
+}
+#sidebar ul.inner li div p {
+  padding-left: 10px;
+  padding-right: 5px;
+}
+#sidebar ul.inner li ul {
+  padding-left: 7px;
+}
+#sidebar, #secondary, #copyright {
+	color: #A5A5A3;				/* Sidebar text color */
+}
+
+/* 
+
+	Link Colors
+	
+*/
+a:link, a:active { text-decoration: underline; color: #17A; }
+a:visited { text-decoration: underline; color: #035; }
+a:hover, a:focus { text-decoration: underline; color: #6BD; }
+
+#sidebar li.links-3 li, #sidebar li.recent-posts-3 li {
+  padding-left: 15px !important;
+  background: transparent url('../../images/owl-bullet-point.png') no-repeat left 6px;
+}
+#sidebar a { font-size: 9pt; }
+#sidebar a:link, #sidebar a:active { text-decoration: none; color: #037bb7; }
+#sidebar a:visited { text-decoration: none; color: #037bb7; }
+#sidebar a:hover { text-decoration: underline; color: #79A; }
+
+h2 a, h2 a:link, h2 a:active, h2 a:visited {
+	color: black;
+}
+h2 a:hover, h2 a:focus {
+	color: #39C;
+}
+p.commentlink a, .entry-meta, .entry-meta a, .post a, p.commentlink a:visited {
+	color: #4f9900;
+}
+.entry-meta, .entry-meta a {
+  font-size: 9pt;
+}
+p.commentlink a:hover, .entry-meta a:hover, .post p a:hover {
+	color: #D3D764;
+}
+#main p a img {
+	border-bottom: 1px solid #17A;
+}
+#main p a img:hover {
+	border-bottom: 1px solid #6BD;
+}
+#menu {
+  text-transform: none;
+}
+#menu a:link, #menu a:visited {
+  color: #2697CE;
+	font-size: 12pt;
+	font-weight: normal;
+}
+#menu a:active, #menu a:hover { color: #000; }
+body#index li#current-index a, body#index #current-index a:visited,
+#menu .current_page_item a, #menu .current_page_item a:visited
+{
+	color: #7bb544; 
+}
+#sidebar li.current_page_item>a, #sidebar li.current_page_item>a:visited {	/* Only works in modern browsers */
+	color: #7bb544;
+	font-weight: bold;
+}
+h1 a:link, h1 a:visited {	/* Logo */
+	color: #686865;
+}
+h1 a:hover, h1 a:active {
+	color: #A6A6A4;
+}
+
+/* 
+
+	Fonts
+	
+*/
+h1 {
+	font: bold 240%/100% "Trebuchet MS", Arial, Helvetica, sans-serif; 
+}
+body {
+	font: 70%/190% Verdana, Arial, Helvetica, sans-serif;
+}
+cite, input, textarea, select, .inputbox, #commentform textarea, .searchbox, .pushbutton, .pushbutton-wide {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+}
+h2 {
+	font: normal 140% Arial, Helvetica, sans-serif;
+}
+#main h3 {
+	font: normal 135% Arial, Helvetica, sans-serif;
+}
+.noteworthy {
+	font: 135% "Lucida Sans Unicode", Arial, sans-serif;
+}
+/* Opera can't render &hearts; symbol with Lucida, so set generic font */
+@media all and (min-width: 0px){ 
+.noteworthy {
+	font: 135% serif;
+}
+}
+.noteworthy a {
+	color:#FF7953 !important;
+}
+.noteworthy a:hover {
+	color:#FF8F6F !important;
+}
+code, pre, kbd, samp {
+	font: 95% "Bitstream Vera Sans Mono", 'Courier New', Courier, Fixed, monospace;
+}
+.post_header {
+  position: relative;
+}
+p.commentlink {
+	border-left: 1px dotted #C2C76D;
+
+  font-family: Union, Georgia, serif;
+  font-size: 12pt;
+
+  margin: 0;
+
+  height: 100%;
+}
+p.commentlink a {
+  position: absolute;
+  
+  top: 50%;
+  margin-top: -1em;
+
+  border: 1px #4f9900;
+  border-style: none none none solid;
+  padding-left: 10px;
+
+  width: 127px;
+}
+.aside p.commentlink {
+	font: normal 100% Verdana, Arial, Helvetica, sans-serif;
+}
+.asides h2, .asides h3, .sidenote h2, .sidenote h3 {
+	font: normal 100% Verdana, Arial, Helvetica, sans-serif;
+}
+
+.box {
+  padding: 21px 30px 0;
+}
+
+.edit a {
+  right: -25px;
+}
+
+/*
+
+	Various
+	
+*/
+acronym, abbr {
+	border-bottom: 1px dashed #C63;
+}
+strike, del {
+	color: #B6B6B4;
+}
+ins {
+	color: #989D3C;
+}
+label:hover {
+	color: #000;
+}
+fieldset {
+	border: 1px solid #F4F8FB;
+	background-color: #F4F8FB;
+}
+legend {
+	background-color: #fff;
+}
+.notice { 	/* Moderation Message */
+	border-top: 1px solid #FFF200;
+	border-bottom: 1px solid #FFF200;
+	background-color: #FFFFF4;
+}
+blockquote, pre {
+	border-left: 1px solid #D9D9D9;
+}
+#tags-allowed {
+	border-top: 1px solid #D6E1ED;
+	border-bottom: 1px solid #D6E1ED;
+	background-color: #F8FAFC;
+}
+
+/* 
+
+	Comments & Trackbacks
+	
+*/
+.comment-even {
+	background-color: #F8FAFC;
+}
+.comment-odd {
+	background-color: #F8FAFC; 		/* Change this colour to add "Flip flopping" backgrounds */
+}
+.comment-author { 					/* Author background color */
+	background-color: #EEF4F9;
+}
+a.comment-permalink {
+	color: #565654 !important;				/* Text color */
+	text-decoration: none !important;
+	border-bottom: 1px dotted #565654;
+}
+#trackbacklist li a {
+	background-color: #FBFCFD;
+}
+#trackbacklist li {
+	border: 1px solid #FBFCFD;
+	background-color: #FEFEFE;
+}
+#trackbacklist li small {
+	color: #565654;
+}
+#trackbacklist li a:hover {
+	background-color:#F4F8FB;
+	color: #035;
+}
+#trackbacklist li a:active {
+	background-color:#FBFCFD;
+	color: #035;
+}
+
+/*
+
+	Search
+	
+*/
+.search-results small {
+	font-size: 100%;
+}
+.search-results small a {
+	color: #989D3C !important;
+	text-decoration: none !important;
+}
+
+
+/* 
+
+	Calendar
+	
+*/
+#wp-calendar caption {
+	color: #989D3C;
+}
+#wp-calendar a {
+	color: #39C;
+	background-color: #F8FAFC;
+}
+#wp-calendar a:hover {
+	color: #035 !important;
+	background-color: #EEF4F9 !important;
+}
+#wp-calendar td.pad:hover { /* Doesn't work in IE */
+	background-color: #F8FAFC;
+}
+
+/* 
+
+	Plugins
+
+*/	
+/* Brian's Latest Comments */
+#recent-activity small a:link, #recent-activity small a:visited, .secondary small a:link, .secondary small a:visited {
+	color: #ACC;
+}
+/* Ultimate Tag Warrior */
+.technoratitags {
+	color: #989D3C !important;
+}
+.technoratitags a {
+	color: #989D3C !important;
+	border-bottom: 1px dotted #989D3C;
+	text-decoration: none;
+}
+.technoratitags a:hover {
+	color: #D3D764 !important;
+	border-bottom: 1px dotted #D3D764;
+	text-decoration: none;
+}
+.longtailvert a {
+	padding: 0 .5em;
+	text-decoration: none;
+	color: #fff;
+}
+.longtailvert a:hover {
+	background: #17A;
+}
+
+/* Textile */
+.caps {	
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* Google Hilite */
+.hilite {
+	background-color: #DEEBF3;
+	color: #000;
+}
